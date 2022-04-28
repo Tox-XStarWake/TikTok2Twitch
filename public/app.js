@@ -7,6 +7,26 @@ let viewerCount = 0;
 let likeCount = 0;
 let diamondsCount = 0;
 
+// Some experimental shit
+
+const tmi = require('tmi.js');
+
+// Define configuration options
+const opts = {
+  identity: {
+    username: process.env.BOT_USERNAME,
+    password: process.env.OAUTH_TOKEN
+  },
+  channels: [
+    process.env.CHANNEL_NAME
+  ]
+};
+
+// Create a client with our options
+const client = new tmi.client(opts);
+const channelName = 'XStarWake'
+
+
 $(document).ready(() => {
     $('#connectButton').click(connect);
     $('#uniqueIdInput').on('keyup', function (e) {
@@ -173,6 +193,14 @@ connection.on('member', (msg) => {
 // New chat comment received
 connection.on('chat', (msg) => {
     addChatItem('', msg, msg.comment);
+    client.connect();
+    client.say(channelName, msg.comment);
+
+
+
+
+
+
 })
 
 // New gift received
