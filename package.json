@@ -1,0 +1,27 @@
+{
+  "name": "boris___bot-upgrade",
+  "version": "0.0.1",
+  "description": "Upgrade to the naughty Boris___Bot.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "tmi.js": "^1.2.1"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/luck-pitch-fennel"
+  },
+  "license": "GNU",
+  "keywords": [
+    "twitch",
+    "chatbots",
+    "JavaScript"
+  ]
+}
