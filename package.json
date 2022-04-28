@@ -1,27 +1,30 @@
 {
-  "name": "boris___bot-upgrade",
-  "version": "0.0.1",
-  "description": "Upgrade to the naughty Boris___Bot.",
-  "main": "bot.js",
+  "name": "tiktok-2-twitch",
+  "version": "0.0.2",
+  "description": "ChatRelay From TikTok.",
+  "main": "start.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node start.js"
   },
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
-    "tmi.js": "^1.2.1"
+    "tmi.js": "^1.2.1",
+    "dotenv": "^16.0.0",
+    "socket.io": "^4.5.0",
+    "tiktok-live-connector": "^0.9.20"
   },
   "engines": {
     "node": "8.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/luck-pitch-fennel"
+    "url": "https://github.com/Tox-XStarWake/TikTok2Twitch"
   },
-  "license": "GNU",
   "keywords": [
     "twitch",
     "chatbots",
-    "JavaScript"
+    "JavaScript",
+    "TikTok"
   ]
 }
