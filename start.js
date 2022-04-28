@@ -51,6 +51,7 @@ io.on('connection', (socket) => {
         tiktokConnectionWrapper.connection.on('roomUser', msg => socket.emit('roomUser', msg));
         tiktokConnectionWrapper.connection.on('member', msg => socket.emit('member', msg));
         tiktokConnectionWrapper.connection.on('chat', msg => socket.emit('chat', msg));
+        tiktokConnectionWrapper.connection.on('chat', msg => client.say(chan, msg));
         tiktokConnectionWrapper.connection.on('gift', msg => socket.emit('gift', msg));
         tiktokConnectionWrapper.connection.on('social', msg => socket.emit('social', msg));
         tiktokConnectionWrapper.connection.on('like', msg => socket.emit('like', msg));

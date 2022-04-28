@@ -9,8 +9,9 @@
   "dependencies": {
     "express": "^4.17.3",
     "request": "^2.88.2",
+    "request-promise-core": "^1.1.4",
     "request-promise": "^4.2.6",
-    "tmi.js": "^1.2.1",
+    "tmi.js": "^1.8.5",
     "dotenv": "^16.0.0",
     "socket.io": "^4.5.0",
     "tiktok-live-connector": "^0.9.20"
@@ -21,6 +22,7 @@
   "repository": {
     "url": "https://github.com/Tox-XStarWake/TikTok2Twitch"
   },
+  "license": "UNLICENSED",
   "keywords": [
     "twitch",
     "chatbots",
